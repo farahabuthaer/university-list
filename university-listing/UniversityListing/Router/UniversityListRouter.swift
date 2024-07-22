@@ -25,7 +25,7 @@ class UniversityRouter: UniversityListRouterProtocol {
         let router = UniversityRouter()
         
         // add VIP
-        var view: UniversityListViewProtocol = UniversityViewController()
+        var view: UniversityListViewProtocol = UniversityListViewController()
         var interactor: UniversityListInteractorProtocol = UniversityInteractor()
         var presenter: UniversityListPresenterProtocol = UniversityPresenter()
         

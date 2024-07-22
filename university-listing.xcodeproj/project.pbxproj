@@ -11,6 +11,8 @@
 		917CA99D615376F9E13BA78A /* Pods_university_listing_university_listingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83503805F1C8986EFF21BDB /* Pods_university_listing_university_listingUITests.framework */; };
 		FE1391E52C4DA682003AE1DA /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1391E42C4DA682003AE1DA /* NetworkServices.swift */; };
 		FE2934F02C4E4F6E000572A1 /* UniversityListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2934EF2C4E4F6E000572A1 /* UniversityListRouter.swift */; };
+		FE52F9C82C4E755A0023F9C4 /* UniversityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52F9C62C4E755A0023F9C4 /* UniversityListView.swift */; };
+		FE52F9C92C4E755A0023F9C4 /* UniversityListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE52F9C72C4E755A0023F9C4 /* UniversityListView.xib */; };
 		FE56154C2C4E508E00EC256C /* UniversityDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE56154B2C4E508E00EC256C /* UniversityDetails.framework */; };
 		FE56154D2C4E508E00EC256C /* UniversityDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE56154B2C4E508E00EC256C /* UniversityDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE5615542C4E553100EC256C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5615532C4E553100EC256C /* Constants.swift */; };
@@ -21,7 +23,6 @@
 		FE653EB12C4928090043D725 /* university_listingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653EB02C4928090043D725 /* university_listingTests.swift */; };
 		FE653EBB2C4928090043D725 /* university_listingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653EBA2C4928090043D725 /* university_listingUITests.swift */; };
 		FE653EBD2C4928090043D725 /* university_listingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653EBC2C4928090043D725 /* university_listingUITestsLaunchTests.swift */; };
-		FE653ECB2C493A070043D725 /* UniversityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653ECA2C493A070043D725 /* UniversityListView.swift */; };
 		FE653ECD2C493A2B0043D725 /* UniversityListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653ECC2C493A2B0043D725 /* UniversityListInteractor.swift */; };
 		FE653ECF2C493A380043D725 /* UniversityListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653ECE2C493A380043D725 /* UniversityListPresenter.swift */; };
 		FE653ED12C493A480043D725 /* UniversitiesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE653ED02C493A480043D725 /* UniversitiesEntity.swift */; };
@@ -71,6 +72,8 @@
 		DB3001BC2933309AEAB3FB80 /* Pods-university-listingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-university-listingTests.release.xcconfig"; path = "Target Support Files/Pods-university-listingTests/Pods-university-listingTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE1391E42C4DA682003AE1DA /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		FE2934EF2C4E4F6E000572A1 /* UniversityListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityListRouter.swift; sourceTree = "<group>"; };
+		FE52F9C62C4E755A0023F9C4 /* UniversityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListView.swift; sourceTree = "<group>"; };
+		FE52F9C72C4E755A0023F9C4 /* UniversityListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniversityListView.xib; sourceTree = "<group>"; };
 		FE56154B2C4E508E00EC256C /* UniversityDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UniversityDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5615532C4E553100EC256C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FE653E962C4928070043D725 /* university-listing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "university-listing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +87,6 @@
 		FE653EB62C4928090043D725 /* university-listingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "university-listingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE653EBA2C4928090043D725 /* university_listingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = university_listingUITests.swift; sourceTree = "<group>"; };
 		FE653EBC2C4928090043D725 /* university_listingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = university_listingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FE653ECA2C493A070043D725 /* UniversityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListView.swift; sourceTree = "<group>"; };
 		FE653ECC2C493A2B0043D725 /* UniversityListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListInteractor.swift; sourceTree = "<group>"; };
 		FE653ECE2C493A380043D725 /* UniversityListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListPresenter.swift; sourceTree = "<group>"; };
 		FE653ED02C493A480043D725 /* UniversitiesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesEntity.swift; sourceTree = "<group>"; };
@@ -146,7 +148,8 @@
 		FE1391D92C4D74AD003AE1DA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FE653ECA2C493A070043D725 /* UniversityListView.swift */,
+				FE52F9C62C4E755A0023F9C4 /* UniversityListView.swift */,
+				FE52F9C72C4E755A0023F9C4 /* UniversityListView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE653EA32C4928080043D725 /* Assets.xcassets in Resources */,
+				FE52F9C92C4E755A0023F9C4 /* UniversityListView.xib in Resources */,
 				FE653EA62C4928080043D725 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,9 +502,9 @@
 			files = (
 				FE2934F02C4E4F6E000572A1 /* UniversityListRouter.swift in Sources */,
 				FE653ECF2C493A380043D725 /* UniversityListPresenter.swift in Sources */,
-				FE653ECB2C493A070043D725 /* UniversityListView.swift in Sources */,
 				FE653ED12C493A480043D725 /* UniversitiesEntity.swift in Sources */,
 				FE1391E52C4DA682003AE1DA /* NetworkServices.swift in Sources */,
+				FE52F9C82C4E755A0023F9C4 /* UniversityListView.swift in Sources */,
 				FE653ECD2C493A2B0043D725 /* UniversityListInteractor.swift in Sources */,
 				FE653E9A2C4928070043D725 /* AppDelegate.swift in Sources */,
 				FE653E9C2C4928070043D725 /* SceneDelegate.swift in Sources */,
