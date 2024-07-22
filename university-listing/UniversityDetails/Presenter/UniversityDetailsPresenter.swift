@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol UniversityDetailPresenterProtocol {
+public protocol UniversityDetailPresenterProtocol {
     var router: UniversityDetailRouterProtocol? { get set }
     var interactor: UniversityDetailInteractorProtocol? { get set }
     var view: UniversityDetailViewProtocol? { get set }
@@ -15,18 +15,16 @@ protocol UniversityDetailPresenterProtocol {
 
 }
 
-class UniversityDetailPresenter: UniversityDetailPresenterProtocol {
+public class UniversityDetailPresenter: UniversityDetailPresenterProtocol {
     
-    var router: UniversityDetailRouterProtocol?
+    public var router: UniversityDetailRouterProtocol?
     
-    var interactor: UniversityDetailInteractorProtocol?
+    public var interactor: UniversityDetailInteractorProtocol?
     
-    var view: UniversityDetailViewProtocol?
+    public var view: UniversityDetailViewProtocol?
     
-    func handleRefreshAction(_ action: (() -> Void)?) {
-        action?() ?? {
-                    print("refreshUniversitiesAction is nil")
-                }()
+    public func handleRefreshAction(_ action: (() -> Void)?) {
+        action?() ?? {}()
         router?.popViewController()
     }
 }

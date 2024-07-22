@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import UniversityDetails
 typealias EntryPoint = UniversityListViewProtocol & UIViewController
 
 protocol UniversityListRouterProtocol {
@@ -48,7 +48,7 @@ class UniversityRouter: UniversityListRouterProtocol {
  {
         let universityDetailsRouter = UniversityDetailRouter.start()
         var universityDetailVC = universityDetailsRouter.entry
-        universityDetailVC?.university = university
+     universityDetailVC?.university = UniversityEntity(webPages: university.webPages, country: university.country, stateProvince: university.stateProvince, domains: university.domains, alphaTwoCode: university.alphaTwoCode, name: university.name)
         universityDetailVC?.refreshUniversitiesAction = refreshAction
      entry?.navigationController?.pushViewController(universityDetailVC!, animated: true)
     }

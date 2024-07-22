@@ -49,7 +49,6 @@ class UniversityPresenter: UniversityListPresenterProtocol {
     }
     
     func refreshUniversities() {
-        print("refreshing universitiesss")
         interactor?.fetchUniversities()
     }
     

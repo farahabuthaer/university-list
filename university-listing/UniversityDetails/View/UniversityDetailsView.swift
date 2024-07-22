@@ -8,19 +8,19 @@
 import Foundation
 import UIKit
 
-protocol UniversityDetailViewProtocol {
+public protocol UniversityDetailViewProtocol {
     var presenter: UniversityDetailPresenterProtocol? { get set }
     var refreshUniversitiesAction: (() -> Void)?  { get set }
-    var university: University?  { get set }
+    var university: UniversityEntity?  { get set }
 }
 
-class UniversityDetailViewController: UIViewController, UniversityDetailViewProtocol {
+public class UniversityDetailViewController: UIViewController, UniversityDetailViewProtocol {
     
-    var presenter: (any UniversityDetailPresenterProtocol)?
+    public var presenter: (any UniversityDetailPresenterProtocol)?
     
-    var refreshUniversitiesAction: (() -> Void)?
+    public var refreshUniversitiesAction: (() -> Void)?
 
-    var university: University? {
+    public var university: UniversityEntity? {
         didSet {
             configureView()
         }
@@ -64,7 +64,7 @@ class UniversityDetailViewController: UIViewController, UniversityDetailViewProt
         return button
     }()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.navigationItem.rightBarButtonItem = refreshButton
@@ -78,7 +78,7 @@ class UniversityDetailViewController: UIViewController, UniversityDetailViewProt
         configureView()
     }
     
-    override func viewDidLayoutSubviews() {
+    public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         nameLabel.frame = CGRect(x: 20, y: 100, width: view.frame.size.width - 40, height: 60)

@@ -26,7 +26,7 @@ class UniversityInteractor: UniversityListInteractorProtocol {
     }
     
     func fetchUniversities() {
-        guard let url = URL(string: "http://universities.hipolabs.com/search?country=United%20Arab%20Emirates") else {
+        guard let url = URL(string: Constants.universitiesUrl) else {
             self.presenter?.InteractorDidFetchUniversities(with:.failure(FetchError.invalidURL))
             return
         }
@@ -64,14 +64,12 @@ class UniversityInteractor: UniversityListInteractorProtocol {
     }
     
     private func loadCachedUniversities() {
-        print("Loading cached universities")
         let realm = try! Realm()
         let realmUniversities = realm.objects(UniversityRealm.self)
         let universities = Array(realmUniversities.map { University(from: $0) })
         if universities.isEmpty {
             self.presenter?.InteractorDidFetchUniversities(with:.failure(FetchError.requestFailed))
         } else {
-            print("Loaded \(universities.count) universities from cache")
             self.presenter?.InteractorDidFetchUniversities(with: .success(universities))
         }
     }

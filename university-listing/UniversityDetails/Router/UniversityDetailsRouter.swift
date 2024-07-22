@@ -8,20 +8,20 @@
 import Foundation
 import UIKit
 
-typealias EntryPointDetails = UniversityDetailViewProtocol & UIViewController
+public typealias EntryPointDetails = UniversityDetailViewProtocol & UIViewController
 
-protocol UniversityDetailRouterProtocol {
+public protocol UniversityDetailRouterProtocol {
     var entry: EntryPointDetails? { get }
     
     static func start() -> UniversityDetailRouterProtocol
     func popViewController()
 }
 
-class UniversityDetailRouter: UniversityDetailRouterProtocol {
+public class UniversityDetailRouter: UniversityDetailRouterProtocol {
     
-    var entry: EntryPointDetails?
+    public var entry: EntryPointDetails?
     
-    static func start() -> UniversityDetailRouterProtocol {
+    public static func start() -> UniversityDetailRouterProtocol {
         let router = UniversityDetailRouter()
         
         // add VIP
@@ -43,7 +43,7 @@ class UniversityDetailRouter: UniversityDetailRouterProtocol {
         return router
     }
     
-    func popViewController() {
+    public func popViewController() {
         entry?.navigationController?.popViewController(animated: true)
     }
 }
